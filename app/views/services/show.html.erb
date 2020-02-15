@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @service.name %>
+</p>
+
+<p>
+  <strong>Fare:</strong>
+  <%= @service.fare %>
+</p>
+
+<p>
+  <strong>Dept city:</strong>
+  <%= @service.dept_city %>
+</p>
+
+<p>
+  <strong>Arrival city:</strong>
+  <%= @service.arrival_city %>
+</p>
+
+<p>
+  <strong>No passengers:</strong>
+  <%= @service.no_passengers %>
+</p>
+
+<p>
+  <strong>Dept date:</strong>
+  <%= @service.dept_date %>
+</p>
+
+<p>
+  <strong>Dept time:</strong>
+  <%= @service.dept_time %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>
