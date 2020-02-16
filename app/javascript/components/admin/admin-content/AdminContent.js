@@ -8,6 +8,7 @@ class AdminContent extends Component {
     }
     render() {
         const { body } = this.props;
+        console.log('---> ', body);
         return (
             <div className="container">
                 <div>

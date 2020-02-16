@@ -2,12 +2,13 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import App from '../components/App';
 import User from '../components/admin/user/User';
+import Service from '../components/admin/service/Service';
 
 const AppRoutes = () =>
     <App>
         <Switch>
-            <Route exact path="/" component={User} />
-            <Route exact path="/admin/users" component={User} />
+            <Route path="/" exact component={User} />
+            <Route path="/services" exact component={Service} />
         </Switch>
     </App>;
 

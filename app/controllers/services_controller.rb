@@ -4,7 +4,8 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.json
   def index
-    @services = Service.all
+    @services = Service.all.order(created_at: :desc)
+    render json: @services
   end
 
   # GET /services/1

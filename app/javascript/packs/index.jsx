@@ -5,19 +5,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 
 import AppRoutes from '../router/AppRoutes';
 import { history } from '../_helpers';
+import store from '../redux/store';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    // <Provider>
+    <Provider store={store}>
         <Router history={history}>
             <AppRoutes />
-        </Router>,
-    // </Provider>,
+        </Router>
+    </Provider>,
     document.body.appendChild(document.createElement('div')),
   )
 })
